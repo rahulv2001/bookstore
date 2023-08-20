@@ -30,8 +30,6 @@ const AddBook = () => {
     }));
   };
 
-  // const API_URL = "http://localhost:8000/books";
-
   const sendRequest = async () => {
     await axios
       .post(API_URL, {
