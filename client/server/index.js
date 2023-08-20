@@ -11,8 +11,7 @@ app.use(cors());
 app.use(express.json({ extended: true }));
 app.use(express.urlencoded({ extended: true }));
 app.use('/books', router);
-
-// const PORT = process.env.PORT || 8000; 
+ 
 mongoose.set('strictQuery', false);
 mongoose.connect(process.env.MONGO_URL,{
     useNewUrlParser: true,
