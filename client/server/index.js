@@ -1,8 +1,4 @@
-// import express from "express";
-// import router from "./routes/book-routes.js";
-// import cors from "cors";
-// import mongoose from "mongoose";
-// require('dotenv').config();
+
 const express = require("express");
 const cors = require("cors");
 const router = require("./routes/book-routes.js");
