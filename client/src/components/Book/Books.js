@@ -15,7 +15,7 @@ const Books = () => {
   useEffect(() => {
     fetchHandler().then((data) => setBooks(data.books));
   }, []);
-   // console.log(books);
+  // console.log(books);
   return (
     <div>
       <ul>

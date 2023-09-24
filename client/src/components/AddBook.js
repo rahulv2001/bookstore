@@ -18,7 +18,6 @@ const AddBook = () => {
     author: "",
     description: "",
     price: "",
-
     image: "",
   });
 
@@ -54,12 +53,14 @@ const AddBook = () => {
           display="flex"
           flexDirection="column"
           justifyContent={"center"}
-          maxWidth={600}
+          maxWidth={"30%"}
+          maxHeight={"30%"}
           alignContent={"center"}
           alignSelf={"center"}
           marginLeft={"auto"}
           marginRight={"auto"}
-          marginTop={3}
+          marginTop={"2%"}
+          marginBottom={"2%"}
         >
           <FormLabel>Name</FormLabel>
           <TextField

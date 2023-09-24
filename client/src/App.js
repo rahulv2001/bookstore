@@ -7,6 +7,7 @@ import AddBook from "./components/AddBook";
 import About from "./components/About";
 import Books from "./components/Book/Books";
 import BookDetail from "./components/Book/BookDetail"
+import Footer from "./components/Footer";
 function App() {
   return (
     <React.Fragment>
@@ -22,6 +23,9 @@ function App() {
           <Route path="/books/:id" element={<BookDetail />} exact />
         </Routes>
       </main>
+      <footer>
+        <Footer />
+      </footer>
     </React.Fragment>
   );
 }
