@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <div>
       <Box display='flex' flexDirection='column' alignItems='center'>
-        <Button LinkComponent={Link} to='/books' sx={{ marginTop: 15, backgroundColor: "orangered", mb:"20%" }} variant='contained' >
+        <Button LinkComponent={Link} to='/books' sx={{ marginTop: 15, backgroundColor: "orangered", mb: "20%" }} variant='contained' >
           <Typography variant='h3'>View All Products</Typography>
         </Button>
       </Box>

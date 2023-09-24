@@ -21,7 +21,6 @@ const BookDetail = () => {
         const fetchHandler = async () => {
             await axios.get(`${API_URL}/${id}`).then((res) => res.data).then((data) => setInput(data.book));
         }
-
         fetchHandler();
     }, [id]);
 

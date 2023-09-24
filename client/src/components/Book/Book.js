@@ -1,22 +1,14 @@
-// import { Button } from "@mui/material";
-// import Card from '@mui/joy/Card';
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { API_URL } from "./Api";
 import axios from "axios";
-
 import "./Book.css";
-
-
 import AspectRatio from '@mui/joy/AspectRatio';
 import Button from '@mui/joy/Button';
 import Card from '@mui/joy/Card';
 import CardContent from '@mui/joy/CardContent';
-import IconButton from '@mui/joy/IconButton';
 import Typography from '@mui/joy/Typography';
-import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
-// import BookmarkAdd from '@mui/icons-material/BookmarkAddOutlined';
 
 
 const Book = (props) => {
@@ -29,17 +21,6 @@ const Book = (props) => {
       .then(() => history("/"));
   };
   return (
-    // <div className="card">
-    //   <img src={image} alt={name} />
-    //   <article> By<span>:</span> {author} </article>
-    //   <h3>{name}</h3>
-    //   <p>{description}</p>
-    //   <h3>Rs. {price}</h3>
-    //   <div>
-    //     <Button LinkComponent={Link} to={`/books/${_id}`} sx={{ mt: 'auto' }} >UPDATE</Button>
-    //     <Button onClick={deleteHandler} sx={{ mt: 'auto', color: 'red' }} >DELETE</Button>
-    //   </div>
-    // </div>
     <div>
       <Card sx={{ width: 320 }} orientation="vertical"
         variant="soft">
@@ -56,7 +37,7 @@ const Book = (props) => {
             <>
               <CheckCircleIcon sx={{ position: "relative", ml: 33.4, mt: -9 }} variant="solid" color="success"></CheckCircleIcon>
               <Typography sx={{ mt: -3 }} level="title-lg">By<span>:</span> {author}</Typography>
-            </> : 
+            </> :
             <Typography sx={{ mt: 1 }} level="title-lg">By<span>:</span> {author}</Typography>
           }
           <Typography level="body-sm"><p>{description}</p></Typography>

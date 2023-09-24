@@ -19,7 +19,7 @@ const Books = () => {
   return (
     <div>
       <ul>
-        {books?
+        {books ?
           books.map((book, id) => (
             <li key={id}>
               <Book book={book} />
