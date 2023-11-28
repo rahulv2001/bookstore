@@ -55,9 +55,13 @@ const Book = (props) => {
             color="primary"
             aria-label="Explore Bahamas Islands"
             sx={{ ml: 'auto', alignSelf: 'center', fontWeight: 600 }}
-            LinkComponent={Link} to={`/books/${_id}`}
           >
-            UPDATE
+            <Link
+              to={`/books/${_id}`}
+              style={{color:"white", textDecoration:"none"}}
+            >
+              UPDATE
+            </Link>
           </Button>
           <Button
             variant="solid"

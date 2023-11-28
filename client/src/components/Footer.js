@@ -28,7 +28,7 @@ const Footer = () => {
                         display: "flex",
                         mb: 2,
                     }}>
-                        <Typography color="white" indicatorColor="secondary" variant="subtitle1">
+                        <Typography color="white" indicatorcolor="secondary" variant="subtitle1">
                             {`${new Date().getFullYear()} | React | Express | MongoDB | Node.Js | Material UI`}
                         </Typography>
                     </Grid>

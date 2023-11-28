@@ -11,7 +11,7 @@ const Header = () => {
                     <NavLink to='/' style={{ color: 'white' }}>
                         <Typography sx={{ display: "flex" }}>
                             <LibraryBooksOutlinedIcon />
-                            <Typography sx={{ ml: "1rem", textDecoration: 'none' }}>BookStore App</Typography>
+                            <Typography sx={{ ml: "1rem", textDecoration: 'none' }}><b style={{textDecoration:"none"}}>BookStore App</b></Typography>
                         </Typography>
                     </NavLink>
                     <Tabs sx={{ ml: 'auto' }} textColor="inherit" indicatorColor="secondary" value={value} onChange={(e, val) => setValue(val)}>
